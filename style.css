@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('coracoes.png'); /* Substitua 'coracoes.png' pelo caminho da imagem de corações vermelhos */
+    background-color: #ff6b6b;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobrir toda a página */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Para centralizar verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #ff1493; /* Rosa */
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Botão com cantos arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+button:hover {
+    background-color: #ff0066; /* Rosa mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+/* ... Estilos anteriores ... */
+
+.gatinho-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none; /* Não interfere com interações do usuário */
+}
+
+.gatinho {
+    width: 100px; /* Largura do gatinho (ajuste conforme necessário) */
+    height: 100px; /* Altura do gatinho (ajuste conforme necessário) */
+    pointer-events: none; /* Não interfere com interações do usuário */
+}
+
+#gatinho1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#gatinho2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#gatinho3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#gatinho4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* ... Estilos anteriores ... */
+
+.mensagem {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 24px;
+    color: white;
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* ... Estilos anteriores ... */
+
+.mensagem {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 24px;
+    color: white;
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out; /* Animar a entrada da mensagem */
+}
+
+.gatinho-container {
+    /* ... Estilos anteriores ... */
+    animation: fadeIn 1s ease-in-out; /* Animar a entrada dos gatinhos */
+}
+
+#meuBotao {
+    /* ... Estilos anteriores ... */
+    transition: transform 0.3s ease-in-out; /* Adicionar transição de escala ao botão */
+}
+
+#meuBotao:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse sobre o botão */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
